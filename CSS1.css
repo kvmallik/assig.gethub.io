@@ -1,0 +1,84 @@
+body { background-color:rgb(244, 215, 215);
+    margin: 1%;
+    padding: 1;
+    font-family: sans-serif;
+
+}
+.container{
+    width: 800px;
+    margin: 50px auto 0;
+    display: table;
+    box-sizing: border-box;
+}
+.row{
+    margin: 20px 0;
+    border-left: 10px solid rgb(231, 223, 223);
+    transition: .5s;
+}
+h1 { color : rgb(16, 16, 16);
+text-align:center;
+}
+
+.column{
+    background-color: aqua;
+    display: table-cell;
+    padding: 10px;
+    width: 33.33%;text-align: center;
+    color: black;
+    vertical-align: middle;
+    border-right: 10px solid rgb(231, 223, 223);
+    border-left: 10px solid rgb(231, 223, 223);
+    transition: .5s;
+}
+.row:nth-child(1) .column:nth-child(1){
+    background-color: rgb(157, 43, 43);
+}
+.row:nth-child(1) .column:nth-child(2){
+    background-color: rgb(3, 242, 255);
+}
+.row:nth-child(1) .column:nth-child(3){
+    background-color: rgb(68, 57, 189);
+}
+@media (max-width: 992px) {
+    .container{
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .row{
+        margin: 0;
+    }
+}
+
+#h6{
+    text-align: right;
+    border: 1px solid black;
+     background-color: rgb(252, 251, 251);
+     margin-left: 200px;
+     padding: 5px 10px;
+     width: fix-content;
+     height: fit-content;
+}
+
+@media (max-width: 872px) {
+   #h6{
+    text-align: center;
+     padding: 0px 20px 0px 20px;
+    margin-left: 70%;
+   }
+}
+
+@media (max-width: 1020px) {
+   #h6{
+    text-align: center;
+     padding: 0px 20px 0px 20px;
+    margin-left: 70%;
+   }
+}
